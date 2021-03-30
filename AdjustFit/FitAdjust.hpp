@@ -33,19 +33,45 @@ private:
     std::map<string, vector<vector<double>>> range_info;
     std::map<string, vector<vector<double>>> read_info;
 
-    double calcCoeffi(const std::multimap<double, double>& outlier_points, double threeD_aveage, float t = 0.001) {
-        std::multimap<double, pair<double, double>> sub_vector;
-        for_each(outlier_points.begin(), outlier_points.end(), [&sub_vector](const auto& data) {
-            sub_vector.insert(make_pair(abs(data.first - data.second), make_pair(data.first, data.second)));
+    double calcCoeffi(std::vector<pair<double, double>>& outlier_points, double threeD_aveage, float t, string name, float delta = 0.001) {
+//        std::multimap<double, pair<double, double>> sub_vector;  //pair数据为预测值和对应的三次元数据
+//        for_each(outlier_points.begin(), outlier_points.end(), [&sub_vector](const auto& data) {
+//            sub_vector.insert(make_pair(abs(data.first - data.second), make_pair(data.first, data.second)));
 
-        });
+//        });
 
-        auto p = sub_vector.begin()->second;
-        return  (p.second - t)/(p.first + threeD_aveage);
+//        auto p = sub_vector.begin()->second;
+//        return  (p.second - t)/(p.first + threeD_aveage);
+
+        std::multimap<size_t, double> error_count2_p;
+        for(size_t i{0}; i < outlier_points.size(); ++i) {
+            auto p = (outlier_points[i].second - delta) / (outlier_points[i].first + threeD_aveage);
+            auto f = [=] () mutable {
+                size_t bad_data_count{0};
+                outlier_points.erase(outlier_points.begin()+i);
+                for(const auto& data: outlier_points) {
+                    bad_data_count += abs((data.first + threeD_aveage) * p - data.second) >= t? 1: 0;
+
+                }
+                return bad_data_count;
+            };
+            error_count2_p.insert({f(), p});
+        }
+        qDebug() << "outlier_points info begin" << QString::fromStdString(name) << endl;
+        for(auto data: outlier_points) {
+            qDebug() << "predictied data " << data.first << " threeD data" << data.second << endl;
+        }
+        qDebug() << "error_count2_p begin********" << endl;
+        for(auto& error: error_count2_p) {
+            qDebug() << "error count " << error.first << " p " << error.second << endl;
+        }
+        qDebug() << "error_count2_p end------------" << endl;
+        qDebug() << "outlier_points info end" << QString::fromStdString(name) << endl;
+        return error_count2_p.begin()->second;
     }
 
     template <typename iter>
-    void calcAdjustData(iter item_iterator, double range_limit = 0.009) {
+    void calcAdjustData(iter item_iterator, double range_limit = 0.00002) {
         auto item_name = item_iterator.measure_name;
         auto k = item_iterator.k;
         auto b = item_iterator.b;
@@ -59,7 +85,8 @@ private:
         double outlier_pixel_right;
         double outlier_sum{0};
         size_t outlier_count{0};
-        std::multimap<double, double> outlier_points;
+        std::vector<pair<double, double>> outlier_points;
+
         for(const auto& pixel_threeD_data: pixel_threeD_datas) {
             pixel_threeD_datas_count++;
             auto pixel_data = pixel_threeD_data.first;
@@ -67,7 +94,7 @@ private:
             auto predicit_data = calcPredicitData(pixel_data, k, b);
 
             if(isOutlierPoint(predicit_data, threeD_data, t)) {
-                outlier_points.insert(make_pair(predicit_data, threeD_data));  //new line
+                outlier_points.push_back(make_pair(predicit_data, threeD_data));  //new line
 
                 if(outlier_frist_flag == false) {
                     outlier_frist_flag = true;
@@ -78,7 +105,7 @@ private:
                 outlier_count++;
                 if(pixel_threeD_datas_count == pixel_threeD_datas_size) {
                     auto outlier_threeD_aveage = outlier_sum / outlier_count;
-                    auto p = calcCoeffi(outlier_points, outlier_threeD_aveage); // new line
+                    auto p = calcCoeffi(outlier_points, outlier_threeD_aveage, t, item_name); // new line
                     range_info[item_name].push_back({outlier_pixel_left-range_limit, outlier_pixel_right+range_limit, outlier_threeD_aveage, p});
 
                 }
@@ -87,8 +114,8 @@ private:
                 outlier_frist_flag = false;
                 if(outlier_count != 0) {
                     auto outlier_threeD_aveage = outlier_sum / outlier_count;
-                    auto p = calcCoeffi(outlier_points, outlier_threeD_aveage); // new line
-                    range_info[item_name].push_back({outlier_pixel_left-=range_limit, outlier_pixel_right+= range_limit, outlier_threeD_aveage, p});
+                    auto p = calcCoeffi(outlier_points, outlier_threeD_aveage, t, item_name); // new line
+                    range_info[item_name].push_back({outlier_pixel_left-range_limit, outlier_pixel_right+ range_limit, outlier_threeD_aveage, p});
 
                 }
                 outlier_sum = 0;
@@ -134,10 +161,10 @@ private:
             for(const auto& data: ri.second) {
                 writer.writeStartElement("range");
                 writer.writeAttribute("index", QString::number(range_index));
-                writer.writeTextElement("left", QString::number(data[0], 'g', 8));
-                writer.writeTextElement("right", QString::number(data[1], 'g', 8));
-                writer.writeTextElement("aveage", QString::number(data[2], 'g', 8));
-                writer.writeTextElement("p", QString::number(data[3], 'g', 8));
+                writer.writeTextElement("left", QString::number(data[0], 'g', 10));
+                writer.writeTextElement("right", QString::number(data[1], 'g', 10));
+                writer.writeTextElement("aveage", QString::number(data[2], 'g', 10));
+                writer.writeTextElement("p", QString::number(data[3], 'g', 10));
                 writer.writeEndElement();
                 range_index++;
             }
