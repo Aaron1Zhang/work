@@ -1,0 +1,13 @@
+//reg
+{"msgid":4, "name": "li si", "password": "123456"}
+
+//login info
+{"msgid":1, "id":23, "password":"123456"}
+
+//one to one chat
+{"msgid":6, "id":22,"from":"zhang san", "to":23, "msg":"hello"}
+{"msgid":5, "id":1,"from":"li si", "to":15, "msg":"hello"}
+msgid:
+id:
+from:
+to:

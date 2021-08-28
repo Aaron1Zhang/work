@@ -1,0 +1,3 @@
+/home/zh/proj/vsCode_proj/muduotest/build/CMakeFiles/rebuild_cache.dir
+/home/zh/proj/vsCode_proj/muduotest/build/CMakeFiles/server.dir
+/home/zh/proj/vsCode_proj/muduotest/build/CMakeFiles/edit_cache.dir

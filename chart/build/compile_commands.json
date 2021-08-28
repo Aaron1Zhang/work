@@ -1,0 +1,52 @@
+[
+{
+  "directory": "/home/zh/proj/vsCode_proj/chart/build/src/server",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/zh/proj/vsCode_proj/chart/include -I/home/zh/proj/vsCode_proj/chart/include/server -I/home/zh/proj/vsCode_proj/chart/include/server/model -I/home/zh/proj/vsCode_proj/chart/include/server/db -I/home/zh/proj/vsCode_proj/chart/thirdparty  -g -g   -o CMakeFiles/ChartServer.dir/ChartServer.cpp.o -c /home/zh/proj/vsCode_proj/chart/src/server/ChartServer.cpp",
+  "file": "/home/zh/proj/vsCode_proj/chart/src/server/ChartServer.cpp"
+},
+{
+  "directory": "/home/zh/proj/vsCode_proj/chart/build/src/server",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/zh/proj/vsCode_proj/chart/include -I/home/zh/proj/vsCode_proj/chart/include/server -I/home/zh/proj/vsCode_proj/chart/include/server/model -I/home/zh/proj/vsCode_proj/chart/include/server/db -I/home/zh/proj/vsCode_proj/chart/thirdparty  -g -g   -o CMakeFiles/ChartServer.dir/ChartService.cpp.o -c /home/zh/proj/vsCode_proj/chart/src/server/ChartService.cpp",
+  "file": "/home/zh/proj/vsCode_proj/chart/src/server/ChartService.cpp"
+},
+{
+  "directory": "/home/zh/proj/vsCode_proj/chart/build/src/server",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/zh/proj/vsCode_proj/chart/include -I/home/zh/proj/vsCode_proj/chart/include/server -I/home/zh/proj/vsCode_proj/chart/include/server/model -I/home/zh/proj/vsCode_proj/chart/include/server/db -I/home/zh/proj/vsCode_proj/chart/thirdparty  -g -g   -o CMakeFiles/ChartServer.dir/main.cpp.o -c /home/zh/proj/vsCode_proj/chart/src/server/main.cpp",
+  "file": "/home/zh/proj/vsCode_proj/chart/src/server/main.cpp"
+},
+{
+  "directory": "/home/zh/proj/vsCode_proj/chart/build/src/server",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/zh/proj/vsCode_proj/chart/include -I/home/zh/proj/vsCode_proj/chart/include/server -I/home/zh/proj/vsCode_proj/chart/include/server/model -I/home/zh/proj/vsCode_proj/chart/include/server/db -I/home/zh/proj/vsCode_proj/chart/thirdparty  -g -g   -o CMakeFiles/ChartServer.dir/db/db.cpp.o -c /home/zh/proj/vsCode_proj/chart/src/server/db/db.cpp",
+  "file": "/home/zh/proj/vsCode_proj/chart/src/server/db/db.cpp"
+},
+{
+  "directory": "/home/zh/proj/vsCode_proj/chart/build/src/server",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/zh/proj/vsCode_proj/chart/include -I/home/zh/proj/vsCode_proj/chart/include/server -I/home/zh/proj/vsCode_proj/chart/include/server/model -I/home/zh/proj/vsCode_proj/chart/include/server/db -I/home/zh/proj/vsCode_proj/chart/thirdparty  -g -g   -o CMakeFiles/ChartServer.dir/model/friendmodel.cpp.o -c /home/zh/proj/vsCode_proj/chart/src/server/model/friendmodel.cpp",
+  "file": "/home/zh/proj/vsCode_proj/chart/src/server/model/friendmodel.cpp"
+},
+{
+  "directory": "/home/zh/proj/vsCode_proj/chart/build/src/server",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/zh/proj/vsCode_proj/chart/include -I/home/zh/proj/vsCode_proj/chart/include/server -I/home/zh/proj/vsCode_proj/chart/include/server/model -I/home/zh/proj/vsCode_proj/chart/include/server/db -I/home/zh/proj/vsCode_proj/chart/thirdparty  -g -g   -o CMakeFiles/ChartServer.dir/model/groupmodel.cpp.o -c /home/zh/proj/vsCode_proj/chart/src/server/model/groupmodel.cpp",
+  "file": "/home/zh/proj/vsCode_proj/chart/src/server/model/groupmodel.cpp"
+},
+{
+  "directory": "/home/zh/proj/vsCode_proj/chart/build/src/server",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/zh/proj/vsCode_proj/chart/include -I/home/zh/proj/vsCode_proj/chart/include/server -I/home/zh/proj/vsCode_proj/chart/include/server/model -I/home/zh/proj/vsCode_proj/chart/include/server/db -I/home/zh/proj/vsCode_proj/chart/thirdparty  -g -g   -o CMakeFiles/ChartServer.dir/model/groupuser.cpp.o -c /home/zh/proj/vsCode_proj/chart/src/server/model/groupuser.cpp",
+  "file": "/home/zh/proj/vsCode_proj/chart/src/server/model/groupuser.cpp"
+},
+{
+  "directory": "/home/zh/proj/vsCode_proj/chart/build/src/server",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/zh/proj/vsCode_proj/chart/include -I/home/zh/proj/vsCode_proj/chart/include/server -I/home/zh/proj/vsCode_proj/chart/include/server/model -I/home/zh/proj/vsCode_proj/chart/include/server/db -I/home/zh/proj/vsCode_proj/chart/thirdparty  -g -g   -o CMakeFiles/ChartServer.dir/model/offlinemsgmodel.cpp.o -c /home/zh/proj/vsCode_proj/chart/src/server/model/offlinemsgmodel.cpp",
+  "file": "/home/zh/proj/vsCode_proj/chart/src/server/model/offlinemsgmodel.cpp"
+},
+{
+  "directory": "/home/zh/proj/vsCode_proj/chart/build/src/server",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/zh/proj/vsCode_proj/chart/include -I/home/zh/proj/vsCode_proj/chart/include/server -I/home/zh/proj/vsCode_proj/chart/include/server/model -I/home/zh/proj/vsCode_proj/chart/include/server/db -I/home/zh/proj/vsCode_proj/chart/thirdparty  -g -g   -o CMakeFiles/ChartServer.dir/model/usermodel.cpp.o -c /home/zh/proj/vsCode_proj/chart/src/server/model/usermodel.cpp",
+  "file": "/home/zh/proj/vsCode_proj/chart/src/server/model/usermodel.cpp"
+},
+{
+  "directory": "/home/zh/proj/vsCode_proj/chart/build/src/client",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/zh/proj/vsCode_proj/chart/include -I/home/zh/proj/vsCode_proj/chart/include/server -I/home/zh/proj/vsCode_proj/chart/include/server/model -I/home/zh/proj/vsCode_proj/chart/include/server/db -I/home/zh/proj/vsCode_proj/chart/thirdparty  -g -g   -o CMakeFiles/client.dir/main.cpp.o -c /home/zh/proj/vsCode_proj/chart/src/client/main.cpp",
+  "file": "/home/zh/proj/vsCode_proj/chart/src/client/main.cpp"
+}
+]

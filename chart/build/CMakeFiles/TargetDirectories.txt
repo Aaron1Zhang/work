@@ -1,0 +1,10 @@
+/home/zh/proj/vsCode_proj/chart/build/CMakeFiles/rebuild_cache.dir
+/home/zh/proj/vsCode_proj/chart/build/CMakeFiles/edit_cache.dir
+/home/zh/proj/vsCode_proj/chart/build/src/CMakeFiles/rebuild_cache.dir
+/home/zh/proj/vsCode_proj/chart/build/src/CMakeFiles/edit_cache.dir
+/home/zh/proj/vsCode_proj/chart/build/src/server/CMakeFiles/rebuild_cache.dir
+/home/zh/proj/vsCode_proj/chart/build/src/server/CMakeFiles/ChartServer.dir
+/home/zh/proj/vsCode_proj/chart/build/src/server/CMakeFiles/edit_cache.dir
+/home/zh/proj/vsCode_proj/chart/build/src/client/CMakeFiles/rebuild_cache.dir
+/home/zh/proj/vsCode_proj/chart/build/src/client/CMakeFiles/client.dir
+/home/zh/proj/vsCode_proj/chart/build/src/client/CMakeFiles/edit_cache.dir
