@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-gcc-7 -g  -rdynamic CMakeFiles/echo_server_upd.dir/echo_server_udp.c.o  -o ../bin/echo_server_upd 

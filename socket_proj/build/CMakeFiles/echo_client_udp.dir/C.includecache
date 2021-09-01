@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zh/proj/work_proj_github/work/socket_proj/echo_client_udp.c
+unistd.h
+-
+stdio.h
+-
+stdlib.h
+-
+error.h
+-
+errno.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+string.h
+-
+netinet/in.h
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+

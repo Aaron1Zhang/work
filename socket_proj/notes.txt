@@ -1,0 +1,2 @@
+ps -ef|grep echo_server ??
+

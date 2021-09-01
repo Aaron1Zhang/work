@@ -1,12 +1,12 @@
 [
 {
   "directory": "/home/zh/proj/work_proj_github/work/socket_proj/build",
-  "command": "/usr/bin/x86_64-linux-gnu-gcc-7   -g   -o CMakeFiles/echo_server.dir/echo_server.c.o   -c /home/zh/proj/work_proj_github/work/socket_proj/echo_server.c",
-  "file": "/home/zh/proj/work_proj_github/work/socket_proj/echo_server.c"
+  "command": "/usr/bin/x86_64-linux-gnu-gcc-7   -g   -o CMakeFiles/echo_server_upd.dir/echo_server_udp.c.o   -c /home/zh/proj/work_proj_github/work/socket_proj/echo_server_udp.c",
+  "file": "/home/zh/proj/work_proj_github/work/socket_proj/echo_server_udp.c"
 },
 {
   "directory": "/home/zh/proj/work_proj_github/work/socket_proj/build",
-  "command": "/usr/bin/x86_64-linux-gnu-gcc-7   -g   -o CMakeFiles/echo_client.dir/echo_cli.c.o   -c /home/zh/proj/work_proj_github/work/socket_proj/echo_cli.c",
-  "file": "/home/zh/proj/work_proj_github/work/socket_proj/echo_cli.c"
+  "command": "/usr/bin/x86_64-linux-gnu-gcc-7   -g   -o CMakeFiles/echo_client_udp.dir/echo_client_udp.c.o   -c /home/zh/proj/work_proj_github/work/socket_proj/echo_client_udp.c",
+  "file": "/home/zh/proj/work_proj_github/work/socket_proj/echo_client_udp.c"
 }
 ]

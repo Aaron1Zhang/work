@@ -1,4 +1,4 @@
-/home/zh/proj/work_proj_github/work/socket_proj/build/CMakeFiles/rebuild_cache.dir
 /home/zh/proj/work_proj_github/work/socket_proj/build/CMakeFiles/edit_cache.dir
-/home/zh/proj/work_proj_github/work/socket_proj/build/CMakeFiles/echo_server.dir
-/home/zh/proj/work_proj_github/work/socket_proj/build/CMakeFiles/echo_client.dir
+/home/zh/proj/work_proj_github/work/socket_proj/build/CMakeFiles/rebuild_cache.dir
+/home/zh/proj/work_proj_github/work/socket_proj/build/CMakeFiles/echo_server_upd.dir
+/home/zh/proj/work_proj_github/work/socket_proj/build/CMakeFiles/echo_client_udp.dir

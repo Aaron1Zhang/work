@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-gcc-7 -g  -rdynamic CMakeFiles/peer_server.dir/peer_server.c.o  -o ../bin/peer_server 

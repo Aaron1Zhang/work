@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-gcc-7 -g  -rdynamic CMakeFiles/echo_client_proto.dir/echo_client_proto.c.o  -o ../bin/echo_client_proto 

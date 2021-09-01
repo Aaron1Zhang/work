@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/zh/proj/work_proj_github/work/socket_proj/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,84 +111,84 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named echo_server
+# Target rules for targets named echo_server_upd
 
 # Build rule for target.
-echo_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo_server
-.PHONY : echo_server
+echo_server_upd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo_server_upd
+.PHONY : echo_server_upd
 
 # fast build rule for target.
-echo_server/fast:
-	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/build
-.PHONY : echo_server/fast
+echo_server_upd/fast:
+	$(MAKE) -f CMakeFiles/echo_server_upd.dir/build.make CMakeFiles/echo_server_upd.dir/build
+.PHONY : echo_server_upd/fast
 
 #=============================================================================
-# Target rules for targets named echo_client
+# Target rules for targets named echo_client_udp
 
 # Build rule for target.
-echo_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo_client
-.PHONY : echo_client
+echo_client_udp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo_client_udp
+.PHONY : echo_client_udp
 
 # fast build rule for target.
-echo_client/fast:
-	$(MAKE) -f CMakeFiles/echo_client.dir/build.make CMakeFiles/echo_client.dir/build
-.PHONY : echo_client/fast
+echo_client_udp/fast:
+	$(MAKE) -f CMakeFiles/echo_client_udp.dir/build.make CMakeFiles/echo_client_udp.dir/build
+.PHONY : echo_client_udp/fast
 
-echo_cli.o: echo_cli.c.o
+echo_client_udp.o: echo_client_udp.c.o
 
-.PHONY : echo_cli.o
-
-# target to build an object file
-echo_cli.c.o:
-	$(MAKE) -f CMakeFiles/echo_client.dir/build.make CMakeFiles/echo_client.dir/echo_cli.c.o
-.PHONY : echo_cli.c.o
-
-echo_cli.i: echo_cli.c.i
-
-.PHONY : echo_cli.i
-
-# target to preprocess a source file
-echo_cli.c.i:
-	$(MAKE) -f CMakeFiles/echo_client.dir/build.make CMakeFiles/echo_client.dir/echo_cli.c.i
-.PHONY : echo_cli.c.i
-
-echo_cli.s: echo_cli.c.s
-
-.PHONY : echo_cli.s
-
-# target to generate assembly for a file
-echo_cli.c.s:
-	$(MAKE) -f CMakeFiles/echo_client.dir/build.make CMakeFiles/echo_client.dir/echo_cli.c.s
-.PHONY : echo_cli.c.s
-
-echo_server.o: echo_server.c.o
-
-.PHONY : echo_server.o
+.PHONY : echo_client_udp.o
 
 # target to build an object file
-echo_server.c.o:
-	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/echo_server.c.o
-.PHONY : echo_server.c.o
+echo_client_udp.c.o:
+	$(MAKE) -f CMakeFiles/echo_client_udp.dir/build.make CMakeFiles/echo_client_udp.dir/echo_client_udp.c.o
+.PHONY : echo_client_udp.c.o
 
-echo_server.i: echo_server.c.i
+echo_client_udp.i: echo_client_udp.c.i
 
-.PHONY : echo_server.i
+.PHONY : echo_client_udp.i
 
 # target to preprocess a source file
-echo_server.c.i:
-	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/echo_server.c.i
-.PHONY : echo_server.c.i
+echo_client_udp.c.i:
+	$(MAKE) -f CMakeFiles/echo_client_udp.dir/build.make CMakeFiles/echo_client_udp.dir/echo_client_udp.c.i
+.PHONY : echo_client_udp.c.i
 
-echo_server.s: echo_server.c.s
+echo_client_udp.s: echo_client_udp.c.s
 
-.PHONY : echo_server.s
+.PHONY : echo_client_udp.s
 
 # target to generate assembly for a file
-echo_server.c.s:
-	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/echo_server.c.s
-.PHONY : echo_server.c.s
+echo_client_udp.c.s:
+	$(MAKE) -f CMakeFiles/echo_client_udp.dir/build.make CMakeFiles/echo_client_udp.dir/echo_client_udp.c.s
+.PHONY : echo_client_udp.c.s
+
+echo_server_udp.o: echo_server_udp.c.o
+
+.PHONY : echo_server_udp.o
+
+# target to build an object file
+echo_server_udp.c.o:
+	$(MAKE) -f CMakeFiles/echo_server_upd.dir/build.make CMakeFiles/echo_server_upd.dir/echo_server_udp.c.o
+.PHONY : echo_server_udp.c.o
+
+echo_server_udp.i: echo_server_udp.c.i
+
+.PHONY : echo_server_udp.i
+
+# target to preprocess a source file
+echo_server_udp.c.i:
+	$(MAKE) -f CMakeFiles/echo_server_upd.dir/build.make CMakeFiles/echo_server_upd.dir/echo_server_udp.c.i
+.PHONY : echo_server_udp.c.i
+
+echo_server_udp.s: echo_server_udp.c.s
+
+.PHONY : echo_server_udp.s
+
+# target to generate assembly for a file
+echo_server_udp.c.s:
+	$(MAKE) -f CMakeFiles/echo_server_upd.dir/build.make CMakeFiles/echo_server_upd.dir/echo_server_udp.c.s
+.PHONY : echo_server_udp.c.s
 
 # Help Target
 help:
@@ -196,16 +196,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... echo_server"
-	@echo "... echo_client"
-	@echo "... echo_cli.o"
-	@echo "... echo_cli.i"
-	@echo "... echo_cli.s"
-	@echo "... echo_server.o"
-	@echo "... echo_server.i"
-	@echo "... echo_server.s"
+	@echo "... rebuild_cache"
+	@echo "... echo_server_upd"
+	@echo "... echo_client_udp"
+	@echo "... echo_client_udp.o"
+	@echo "... echo_client_udp.i"
+	@echo "... echo_client_udp.s"
+	@echo "... echo_server_udp.o"
+	@echo "... echo_server_udp.i"
+	@echo "... echo_server_udp.s"
 .PHONY : help
 
 
