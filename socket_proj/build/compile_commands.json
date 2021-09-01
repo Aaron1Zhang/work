@@ -1,12 +1,12 @@
 [
 {
   "directory": "/home/zh/proj/work_proj_github/work/socket_proj/build",
-  "command": "/usr/bin/x86_64-linux-gnu-gcc-7   -g   -o CMakeFiles/echo_server_upd.dir/echo_server_udp.c.o   -c /home/zh/proj/work_proj_github/work/socket_proj/echo_server_udp.c",
-  "file": "/home/zh/proj/work_proj_github/work/socket_proj/echo_server_udp.c"
+  "command": "/usr/bin/x86_64-linux-gnu-gcc-7   -g   -o CMakeFiles/echo_server_thread.dir/echo_serv_thread.c.o   -c /home/zh/proj/work_proj_github/work/socket_proj/echo_serv_thread.c",
+  "file": "/home/zh/proj/work_proj_github/work/socket_proj/echo_serv_thread.c"
 },
 {
   "directory": "/home/zh/proj/work_proj_github/work/socket_proj/build",
-  "command": "/usr/bin/x86_64-linux-gnu-gcc-7   -g   -o CMakeFiles/echo_client_udp.dir/echo_client_udp.c.o   -c /home/zh/proj/work_proj_github/work/socket_proj/echo_client_udp.c",
-  "file": "/home/zh/proj/work_proj_github/work/socket_proj/echo_client_udp.c"
+  "command": "/usr/bin/x86_64-linux-gnu-gcc-7   -g   -o CMakeFiles/pthread_key.dir/pthread_key.c.o   -c /home/zh/proj/work_proj_github/work/socket_proj/pthread_key.c",
+  "file": "/home/zh/proj/work_proj_github/work/socket_proj/pthread_key.c"
 }
 ]

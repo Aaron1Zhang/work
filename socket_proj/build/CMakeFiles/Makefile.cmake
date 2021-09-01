@@ -42,6 +42,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/echo_server_upd.dir/DependInfo.cmake"
-  "CMakeFiles/echo_client_udp.dir/DependInfo.cmake"
+  "CMakeFiles/echo_server_thread.dir/DependInfo.cmake"
+  "CMakeFiles/pthread_key.dir/DependInfo.cmake"
   )

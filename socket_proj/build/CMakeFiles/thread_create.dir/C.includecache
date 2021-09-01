@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zh/proj/work_proj_github/work/socket_proj/thread_create.c
+stdio.h
+-
+pthread.h
+-
+unistd.h
+-
+string.h
+-
+stdlib.h
+-
+

@@ -60,76 +60,76 @@ CMAKE_SOURCE_DIR = /home/zh/proj/work_proj_github/work/socket_proj
 CMAKE_BINARY_DIR = /home/zh/proj/work_proj_github/work/socket_proj/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/echo_server_upd.dir
+# Target rules for target CMakeFiles/echo_server_thread.dir
 
 # All Build rule for target.
-CMakeFiles/echo_server_upd.dir/all:
-	$(MAKE) -f CMakeFiles/echo_server_upd.dir/build.make CMakeFiles/echo_server_upd.dir/depend
-	$(MAKE) -f CMakeFiles/echo_server_upd.dir/build.make CMakeFiles/echo_server_upd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zh/proj/work_proj_github/work/socket_proj/build/CMakeFiles --progress-num=3,4 "Built target echo_server_upd"
-.PHONY : CMakeFiles/echo_server_upd.dir/all
+CMakeFiles/echo_server_thread.dir/all:
+	$(MAKE) -f CMakeFiles/echo_server_thread.dir/build.make CMakeFiles/echo_server_thread.dir/depend
+	$(MAKE) -f CMakeFiles/echo_server_thread.dir/build.make CMakeFiles/echo_server_thread.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zh/proj/work_proj_github/work/socket_proj/build/CMakeFiles --progress-num=1,2 "Built target echo_server_thread"
+.PHONY : CMakeFiles/echo_server_thread.dir/all
 
 # Include target in all.
-all: CMakeFiles/echo_server_upd.dir/all
+all: CMakeFiles/echo_server_thread.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/echo_server_upd.dir/rule: cmake_check_build_system
+CMakeFiles/echo_server_thread.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zh/proj/work_proj_github/work/socket_proj/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/echo_server_upd.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/echo_server_thread.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zh/proj/work_proj_github/work/socket_proj/build/CMakeFiles 0
-.PHONY : CMakeFiles/echo_server_upd.dir/rule
+.PHONY : CMakeFiles/echo_server_thread.dir/rule
 
 # Convenience name for target.
-echo_server_upd: CMakeFiles/echo_server_upd.dir/rule
+echo_server_thread: CMakeFiles/echo_server_thread.dir/rule
 
-.PHONY : echo_server_upd
-
-# clean rule for target.
-CMakeFiles/echo_server_upd.dir/clean:
-	$(MAKE) -f CMakeFiles/echo_server_upd.dir/build.make CMakeFiles/echo_server_upd.dir/clean
-.PHONY : CMakeFiles/echo_server_upd.dir/clean
+.PHONY : echo_server_thread
 
 # clean rule for target.
-clean: CMakeFiles/echo_server_upd.dir/clean
+CMakeFiles/echo_server_thread.dir/clean:
+	$(MAKE) -f CMakeFiles/echo_server_thread.dir/build.make CMakeFiles/echo_server_thread.dir/clean
+.PHONY : CMakeFiles/echo_server_thread.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/echo_server_thread.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/echo_client_udp.dir
+# Target rules for target CMakeFiles/pthread_key.dir
 
 # All Build rule for target.
-CMakeFiles/echo_client_udp.dir/all:
-	$(MAKE) -f CMakeFiles/echo_client_udp.dir/build.make CMakeFiles/echo_client_udp.dir/depend
-	$(MAKE) -f CMakeFiles/echo_client_udp.dir/build.make CMakeFiles/echo_client_udp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zh/proj/work_proj_github/work/socket_proj/build/CMakeFiles --progress-num=1,2 "Built target echo_client_udp"
-.PHONY : CMakeFiles/echo_client_udp.dir/all
+CMakeFiles/pthread_key.dir/all:
+	$(MAKE) -f CMakeFiles/pthread_key.dir/build.make CMakeFiles/pthread_key.dir/depend
+	$(MAKE) -f CMakeFiles/pthread_key.dir/build.make CMakeFiles/pthread_key.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zh/proj/work_proj_github/work/socket_proj/build/CMakeFiles --progress-num=3,4 "Built target pthread_key"
+.PHONY : CMakeFiles/pthread_key.dir/all
 
 # Include target in all.
-all: CMakeFiles/echo_client_udp.dir/all
+all: CMakeFiles/pthread_key.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/echo_client_udp.dir/rule: cmake_check_build_system
+CMakeFiles/pthread_key.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zh/proj/work_proj_github/work/socket_proj/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/echo_client_udp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pthread_key.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zh/proj/work_proj_github/work/socket_proj/build/CMakeFiles 0
-.PHONY : CMakeFiles/echo_client_udp.dir/rule
+.PHONY : CMakeFiles/pthread_key.dir/rule
 
 # Convenience name for target.
-echo_client_udp: CMakeFiles/echo_client_udp.dir/rule
+pthread_key: CMakeFiles/pthread_key.dir/rule
 
-.PHONY : echo_client_udp
-
-# clean rule for target.
-CMakeFiles/echo_client_udp.dir/clean:
-	$(MAKE) -f CMakeFiles/echo_client_udp.dir/build.make CMakeFiles/echo_client_udp.dir/clean
-.PHONY : CMakeFiles/echo_client_udp.dir/clean
+.PHONY : pthread_key
 
 # clean rule for target.
-clean: CMakeFiles/echo_client_udp.dir/clean
+CMakeFiles/pthread_key.dir/clean:
+	$(MAKE) -f CMakeFiles/pthread_key.dir/build.make CMakeFiles/pthread_key.dir/clean
+.PHONY : CMakeFiles/pthread_key.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/pthread_key.dir/clean
 
 .PHONY : clean
 

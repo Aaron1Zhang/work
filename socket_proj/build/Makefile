@@ -111,84 +111,84 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named echo_server_upd
+# Target rules for targets named echo_server_thread
 
 # Build rule for target.
-echo_server_upd: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo_server_upd
-.PHONY : echo_server_upd
+echo_server_thread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo_server_thread
+.PHONY : echo_server_thread
 
 # fast build rule for target.
-echo_server_upd/fast:
-	$(MAKE) -f CMakeFiles/echo_server_upd.dir/build.make CMakeFiles/echo_server_upd.dir/build
-.PHONY : echo_server_upd/fast
+echo_server_thread/fast:
+	$(MAKE) -f CMakeFiles/echo_server_thread.dir/build.make CMakeFiles/echo_server_thread.dir/build
+.PHONY : echo_server_thread/fast
 
 #=============================================================================
-# Target rules for targets named echo_client_udp
+# Target rules for targets named pthread_key
 
 # Build rule for target.
-echo_client_udp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo_client_udp
-.PHONY : echo_client_udp
+pthread_key: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pthread_key
+.PHONY : pthread_key
 
 # fast build rule for target.
-echo_client_udp/fast:
-	$(MAKE) -f CMakeFiles/echo_client_udp.dir/build.make CMakeFiles/echo_client_udp.dir/build
-.PHONY : echo_client_udp/fast
+pthread_key/fast:
+	$(MAKE) -f CMakeFiles/pthread_key.dir/build.make CMakeFiles/pthread_key.dir/build
+.PHONY : pthread_key/fast
 
-echo_client_udp.o: echo_client_udp.c.o
+echo_serv_thread.o: echo_serv_thread.c.o
 
-.PHONY : echo_client_udp.o
-
-# target to build an object file
-echo_client_udp.c.o:
-	$(MAKE) -f CMakeFiles/echo_client_udp.dir/build.make CMakeFiles/echo_client_udp.dir/echo_client_udp.c.o
-.PHONY : echo_client_udp.c.o
-
-echo_client_udp.i: echo_client_udp.c.i
-
-.PHONY : echo_client_udp.i
-
-# target to preprocess a source file
-echo_client_udp.c.i:
-	$(MAKE) -f CMakeFiles/echo_client_udp.dir/build.make CMakeFiles/echo_client_udp.dir/echo_client_udp.c.i
-.PHONY : echo_client_udp.c.i
-
-echo_client_udp.s: echo_client_udp.c.s
-
-.PHONY : echo_client_udp.s
-
-# target to generate assembly for a file
-echo_client_udp.c.s:
-	$(MAKE) -f CMakeFiles/echo_client_udp.dir/build.make CMakeFiles/echo_client_udp.dir/echo_client_udp.c.s
-.PHONY : echo_client_udp.c.s
-
-echo_server_udp.o: echo_server_udp.c.o
-
-.PHONY : echo_server_udp.o
+.PHONY : echo_serv_thread.o
 
 # target to build an object file
-echo_server_udp.c.o:
-	$(MAKE) -f CMakeFiles/echo_server_upd.dir/build.make CMakeFiles/echo_server_upd.dir/echo_server_udp.c.o
-.PHONY : echo_server_udp.c.o
+echo_serv_thread.c.o:
+	$(MAKE) -f CMakeFiles/echo_server_thread.dir/build.make CMakeFiles/echo_server_thread.dir/echo_serv_thread.c.o
+.PHONY : echo_serv_thread.c.o
 
-echo_server_udp.i: echo_server_udp.c.i
+echo_serv_thread.i: echo_serv_thread.c.i
 
-.PHONY : echo_server_udp.i
+.PHONY : echo_serv_thread.i
 
 # target to preprocess a source file
-echo_server_udp.c.i:
-	$(MAKE) -f CMakeFiles/echo_server_upd.dir/build.make CMakeFiles/echo_server_upd.dir/echo_server_udp.c.i
-.PHONY : echo_server_udp.c.i
+echo_serv_thread.c.i:
+	$(MAKE) -f CMakeFiles/echo_server_thread.dir/build.make CMakeFiles/echo_server_thread.dir/echo_serv_thread.c.i
+.PHONY : echo_serv_thread.c.i
 
-echo_server_udp.s: echo_server_udp.c.s
+echo_serv_thread.s: echo_serv_thread.c.s
 
-.PHONY : echo_server_udp.s
+.PHONY : echo_serv_thread.s
 
 # target to generate assembly for a file
-echo_server_udp.c.s:
-	$(MAKE) -f CMakeFiles/echo_server_upd.dir/build.make CMakeFiles/echo_server_upd.dir/echo_server_udp.c.s
-.PHONY : echo_server_udp.c.s
+echo_serv_thread.c.s:
+	$(MAKE) -f CMakeFiles/echo_server_thread.dir/build.make CMakeFiles/echo_server_thread.dir/echo_serv_thread.c.s
+.PHONY : echo_serv_thread.c.s
+
+pthread_key.o: pthread_key.c.o
+
+.PHONY : pthread_key.o
+
+# target to build an object file
+pthread_key.c.o:
+	$(MAKE) -f CMakeFiles/pthread_key.dir/build.make CMakeFiles/pthread_key.dir/pthread_key.c.o
+.PHONY : pthread_key.c.o
+
+pthread_key.i: pthread_key.c.i
+
+.PHONY : pthread_key.i
+
+# target to preprocess a source file
+pthread_key.c.i:
+	$(MAKE) -f CMakeFiles/pthread_key.dir/build.make CMakeFiles/pthread_key.dir/pthread_key.c.i
+.PHONY : pthread_key.c.i
+
+pthread_key.s: pthread_key.c.s
+
+.PHONY : pthread_key.s
+
+# target to generate assembly for a file
+pthread_key.c.s:
+	$(MAKE) -f CMakeFiles/pthread_key.dir/build.make CMakeFiles/pthread_key.dir/pthread_key.c.s
+.PHONY : pthread_key.c.s
 
 # Help Target
 help:
@@ -197,15 +197,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... echo_server_thread"
 	@echo "... rebuild_cache"
-	@echo "... echo_server_upd"
-	@echo "... echo_client_udp"
-	@echo "... echo_client_udp.o"
-	@echo "... echo_client_udp.i"
-	@echo "... echo_client_udp.s"
-	@echo "... echo_server_udp.o"
-	@echo "... echo_server_udp.i"
-	@echo "... echo_server_udp.s"
+	@echo "... pthread_key"
+	@echo "... echo_serv_thread.o"
+	@echo "... echo_serv_thread.i"
+	@echo "... echo_serv_thread.s"
+	@echo "... pthread_key.o"
+	@echo "... pthread_key.i"
+	@echo "... pthread_key.s"
 .PHONY : help
 
 

@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-gcc-7 -g  -rdynamic CMakeFiles/thread_create.dir/thread_create.c.o  -o ../bin/thread_create 

@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-gcc-7 -g  -rdynamic CMakeFiles/echo_server_thread.dir/echo_serv_thread.c.o  -o ../bin/echo_server_thread -lpthread 
