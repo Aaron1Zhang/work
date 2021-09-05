@@ -7,5 +7,6 @@ example/caller/CMakeFiles/consumer.dir/__/user.pb.cc.o
 example/caller/CMakeFiles/consumer.dir/userservicecaller.cc.o
  ../example/user.pb.h
  ../src/include/mprpcapplication.h
+ ../src/include/mprpcchannel.h
  ../src/include/mprpcconfig.h
  /home/zh/proj/work_proj_github/work/rpc/example/caller/userservicecaller.cc

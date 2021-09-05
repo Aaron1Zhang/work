@@ -27,8 +27,8 @@ public:
         bool res = Login(name, pwd);
         response->set_success(res);
         auto resCode = response->mutable_res();
-        resCode->set_errcode(0);
-        resCode->set_errmsg("");
+        resCode->set_errcode(1);
+        resCode->set_errmsg("login failed of password!\n");
         done->Run();
     }
 

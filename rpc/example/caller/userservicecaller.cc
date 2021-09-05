@@ -11,5 +11,12 @@ int main(int argc, char **argv)
     request.set_name("zhang san");
     request.set_password("123456");
     consumer.Login(nullptr, &request, &response, nullptr);
+    
+    std::cout << "wait reponse...\n";
+    if (response.res().errcode() == 0) {
+        std::cout << "request succcess\n";
+    } else {
+        std::cout << "request failed! err msg is: " << response.res().errcode() << "\n";
+    }
     return 0;
 }

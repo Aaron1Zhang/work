@@ -95,6 +95,24 @@ string
 /home/zh/proj/work_proj_github/work/rpc/src/mprpcchannel.cc
 mprpcchannel.h
 /home/zh/proj/work_proj_github/work/rpc/src/mprpcchannel.h
+string
+-
+rpcheader.pb.h
+/home/zh/proj/work_proj_github/work/rpc/src/rpcheader.pb.h
+sys/types.h
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+netinet/in.h
+-
+unistd.h
+-
+errno.h
+-
+mprpcapplication.h
+/home/zh/proj/work_proj_github/work/rpc/src/mprpcapplication.h
 
 /home/zh/proj/work_proj_github/work/rpc/src/mprpcconfig.cc
 mprpcconfig.h

@@ -48,6 +48,14 @@ google/protobuf/port_undef.inc
 mprpcconfig.h
 ../src/include/mprpcconfig.h
 
+../src/include/mprpcchannel.h
+google/protobuf/service.h
+-
+google/protobuf/descriptor.h
+-
+google/protobuf/message.h
+-
+
 ../src/include/mprpcconfig.h
 unordered_map
 -
@@ -59,6 +67,8 @@ user.pb.h
 /home/zh/proj/work_proj_github/work/rpc/example/caller/user.pb.h
 mprpcapplication.h
 /home/zh/proj/work_proj_github/work/rpc/example/caller/mprpcapplication.h
+mprpcchannel.h
+/home/zh/proj/work_proj_github/work/rpc/example/caller/mprpcchannel.h
 
 /home/zh/proj/work_proj_github/work/rpc/example/user.pb.cc
 user.pb.h
