@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-g++-7  -g  -rdynamic CMakeFiles/consumer.dir/userservicecaller.cc.o CMakeFiles/consumer.dir/__/user.pb.cc.o  -o ../../../bin/consumer  -L/home/zh/proj/work_proj_github/work/rpc/lib -Wl,-rpath,/home/zh/proj/work_proj_github/work/rpc/lib ../../../lib/libmprpc.a -lprotobuf -lmuduo_net -lmuduo_base -lpthread 

@@ -8,3 +8,6 @@
 /home/zh/proj/work_proj_github/work/rpc/build/example/callee/CMakeFiles/rebuild_cache.dir
 /home/zh/proj/work_proj_github/work/rpc/build/example/callee/CMakeFiles/provider.dir
 /home/zh/proj/work_proj_github/work/rpc/build/example/callee/CMakeFiles/edit_cache.dir
+/home/zh/proj/work_proj_github/work/rpc/build/example/caller/CMakeFiles/rebuild_cache.dir
+/home/zh/proj/work_proj_github/work/rpc/build/example/caller/CMakeFiles/consumer.dir
+/home/zh/proj/work_proj_github/work/rpc/build/example/caller/CMakeFiles/edit_cache.dir

@@ -6,12 +6,17 @@
 #include <stdlib.h>
 
 pthread_key_t pthread_key;
+pthread_once_t pthread_once_var = PTHREAD_ONCE_INIT;
 
 void destroy_key(void* arg) {
     printf("destroy key\n");
     free(arg);
-    
 }
+
+void pthread_key_once() {
+    pthread_key_create(&pthread_key, destroy_key);
+    printf("pthread_key once init...\n");
+} 
 
 typedef struct TSD {
     pthread_t tid;
@@ -19,24 +24,22 @@ typedef struct TSD {
 } tsd_t;
 
 void* thread_routine(void* arg) {
+    pthread_once(&pthread_once_var, pthread_key_once);
     tsd_t* pdata = (tsd_t*)malloc(sizeof(tsd_t));
     pdata->tid = pthread_self();
     pdata->str = (char*) arg;
     printf("tsd data is: 0x%x, %s\n", (int)pdata->tid, pdata->str);
-
     pthread_setspecific(pthread_key, pdata);
     sleep(2);
 
     tsd_t* pget = pthread_getspecific(pthread_key);
     printf("get tsd data is: 0x%x, %s\n", (int)pget->tid, pget->str);
-
-
     return NULL;
 }
 int main(int argc, char const *argv[])
 {
     /* code */
-    pthread_key_create(&pthread_key, destroy_key);
+   
     pthread_t thread1;
     pthread_t thread2;
     pthread_create(&thread1, NULL, thread_routine, "thread1");

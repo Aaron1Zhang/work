@@ -47,7 +47,7 @@ void RpcProvider::onConnection(const muduo::net::TcpConnectionPtr& conn) {
         conn->shutdown();
     }
 }
-void RpcProvider::onMessage(const muduo::net::TcpConnectionPtr&,muduo::net::Buffer* buffer, muduo::Timestamp) {
+void RpcProvider::onMessage(const muduo::net::TcpConnectionPtr& conn,muduo::net::Buffer* buffer, muduo::Timestamp) {
     std::string recv_buf = buffer->retrieveAllAsString();
 
     uint32_t header_size = 0;
@@ -59,8 +59,8 @@ void RpcProvider::onMessage(const muduo::net::TcpConnectionPtr&,muduo::net::Buff
     std::string service_name;
     std::string method_name;
     if (rpcHeader.ParseFromString(rpc_header_str)) {
-        auto service_name = rpcHeader.service_name();
-        auto method_name = rpcHeader.method_name();
+        service_name = rpcHeader.service_name();
+        method_name = rpcHeader.method_name();
         args_size = rpcHeader.args_size();
     } else {
         std::cout << "rpc_head_str: " << rpc_header_str << "parse failed!" << "\n";
@@ -75,12 +75,46 @@ void RpcProvider::onMessage(const muduo::net::TcpConnectionPtr&,muduo::net::Buff
     std::cout << "method_name: " << method_name << std::endl; 
     std::cout << "args_str: " << args_str << std::endl; 
     std::cout << "============================================" << std::endl;
+    auto iter = m_serviceMap.find(service_name);
+    if (iter == m_serviceMap.end()) {
+        std::cout << "can not find this service\n";
+    }
+
+    auto service_info = iter->second;
+    auto method_iter = service_info.m_methodMap.find(method_name);
+    if (method_iter == service_info.m_methodMap.end()) {
+        std::cout << "can not find this method\n";
+    }
+
+    auto service_dsc = service_info.m_service;
+    auto method_dsc = method_iter->second;
+
+    google::protobuf::Message* req_message = service_dsc->GetRequestPrototype(method_dsc).New();
+    google::protobuf::Message* res_message = service_dsc->GetResponsePrototype(method_dsc).New();
+
+    if (!req_message->ParseFromString(args_str)) {
+        std::cout << "parse meg failed!\n";
+    }
+
+    google::protobuf::Closure* closure = google::protobuf::NewCallback<RpcProvider, const muduo::net::TcpConnectionPtr&,
+                                                google::protobuf::Message*>
+                                                (this, &RpcProvider::sendRpcResponce, conn, res_message);
+    
+
+    service_dsc->CallMethod(method_dsc, nullptr, req_message, res_message, closure);
+
 }
 
-
-
-
-
+void RpcProvider::sendRpcResponce(const muduo::net::TcpConnectionPtr& conn, google::protobuf::Message* response) {
+    std::string response_str;
+    if (response->SerializeToString(&response_str)) {
+        conn->send(response_str);
+        
+    } else {
+        std::cout << "serial to string failed!\n";
+    }
+    conn->shutdown();   
+}
 
 
 

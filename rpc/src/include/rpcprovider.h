@@ -28,4 +28,6 @@ private:
     void onConnection(const muduo::net::TcpConnectionPtr&);
 
     void onMessage(const muduo::net::TcpConnectionPtr&, muduo::net::Buffer*, muduo::Timestamp);
+
+    void sendRpcResponce(const muduo::net::TcpConnectionPtr&, google::protobuf::Message*);
 };

@@ -6,8 +6,18 @@
 },
 {
   "directory": "/home/zh/proj/work_proj_github/work/rpc/build/src",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/zh/proj/work_proj_github/work/rpc/src/include -I/home/zh/proj/work_proj_github/work/rpc/example  -g   -o CMakeFiles/mprpc.dir/mprpcchannel.cc.o -c /home/zh/proj/work_proj_github/work/rpc/src/mprpcchannel.cc",
+  "file": "/home/zh/proj/work_proj_github/work/rpc/src/mprpcchannel.cc"
+},
+{
+  "directory": "/home/zh/proj/work_proj_github/work/rpc/build/src",
   "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/zh/proj/work_proj_github/work/rpc/src/include -I/home/zh/proj/work_proj_github/work/rpc/example  -g   -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /home/zh/proj/work_proj_github/work/rpc/src/mprpcconfig.cc",
   "file": "/home/zh/proj/work_proj_github/work/rpc/src/mprpcconfig.cc"
+},
+{
+  "directory": "/home/zh/proj/work_proj_github/work/rpc/build/src",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/zh/proj/work_proj_github/work/rpc/src/include -I/home/zh/proj/work_proj_github/work/rpc/example  -g   -o CMakeFiles/mprpc.dir/rpcheader.pb.cc.o -c /home/zh/proj/work_proj_github/work/rpc/src/rpcheader.pb.cc",
+  "file": "/home/zh/proj/work_proj_github/work/rpc/src/rpcheader.pb.cc"
 },
 {
   "directory": "/home/zh/proj/work_proj_github/work/rpc/build/src",
@@ -22,6 +32,16 @@
 {
   "directory": "/home/zh/proj/work_proj_github/work/rpc/build/example/callee",
   "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/zh/proj/work_proj_github/work/rpc/src/include -I/home/zh/proj/work_proj_github/work/rpc/example  -g   -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/zh/proj/work_proj_github/work/rpc/example/user.pb.cc",
+  "file": "/home/zh/proj/work_proj_github/work/rpc/example/user.pb.cc"
+},
+{
+  "directory": "/home/zh/proj/work_proj_github/work/rpc/build/example/caller",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/zh/proj/work_proj_github/work/rpc/src/include -I/home/zh/proj/work_proj_github/work/rpc/example  -g   -o CMakeFiles/consumer.dir/userservicecaller.cc.o -c /home/zh/proj/work_proj_github/work/rpc/example/caller/userservicecaller.cc",
+  "file": "/home/zh/proj/work_proj_github/work/rpc/example/caller/userservicecaller.cc"
+},
+{
+  "directory": "/home/zh/proj/work_proj_github/work/rpc/build/example/caller",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/zh/proj/work_proj_github/work/rpc/src/include -I/home/zh/proj/work_proj_github/work/rpc/example  -g   -o CMakeFiles/consumer.dir/__/user.pb.cc.o -c /home/zh/proj/work_proj_github/work/rpc/example/user.pb.cc",
   "file": "/home/zh/proj/work_proj_github/work/rpc/example/user.pb.cc"
 }
 ]

@@ -40,6 +40,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/zh/proj/work_proj_github/work/rpc/build/example/callee/cmake_install.cmake")
+  include("/home/zh/proj/work_proj_github/work/rpc/build/example/caller/cmake_install.cmake")
 
 endif()
 

@@ -81,9 +81,33 @@ src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o.provides: src/CMakeFiles/mprpc.di
 src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o.provides.build: src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o
 
 
+src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o: src/CMakeFiles/mprpc.dir/flags.make
+src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o: ../src/mprpcchannel.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zh/proj/work_proj_github/work/rpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o"
+	cd /home/zh/proj/work_proj_github/work/rpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mprpc.dir/mprpcchannel.cc.o -c /home/zh/proj/work_proj_github/work/rpc/src/mprpcchannel.cc
+
+src/CMakeFiles/mprpc.dir/mprpcchannel.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/mprpcchannel.cc.i"
+	cd /home/zh/proj/work_proj_github/work/rpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zh/proj/work_proj_github/work/rpc/src/mprpcchannel.cc > CMakeFiles/mprpc.dir/mprpcchannel.cc.i
+
+src/CMakeFiles/mprpc.dir/mprpcchannel.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/mprpcchannel.cc.s"
+	cd /home/zh/proj/work_proj_github/work/rpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zh/proj/work_proj_github/work/rpc/src/mprpcchannel.cc -o CMakeFiles/mprpc.dir/mprpcchannel.cc.s
+
+src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o.requires:
+
+.PHONY : src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o.requires
+
+src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o.provides: src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o.requires
+	$(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o.provides.build
+.PHONY : src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o.provides
+
+src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o.provides.build: src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o
+
+
 src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o: ../src/mprpcconfig.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zh/proj/work_proj_github/work/rpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zh/proj/work_proj_github/work/rpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o"
 	cd /home/zh/proj/work_proj_github/work/rpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /home/zh/proj/work_proj_github/work/rpc/src/mprpcconfig.cc
 
 src/CMakeFiles/mprpc.dir/mprpcconfig.cc.i: cmake_force
@@ -105,9 +129,33 @@ src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o.provides: src/CMakeFiles/mprpc.dir/mpr
 src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o.provides.build: src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o
 
 
+src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o: src/CMakeFiles/mprpc.dir/flags.make
+src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o: ../src/rpcheader.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zh/proj/work_proj_github/work/rpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o"
+	cd /home/zh/proj/work_proj_github/work/rpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mprpc.dir/rpcheader.pb.cc.o -c /home/zh/proj/work_proj_github/work/rpc/src/rpcheader.pb.cc
+
+src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/rpcheader.pb.cc.i"
+	cd /home/zh/proj/work_proj_github/work/rpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zh/proj/work_proj_github/work/rpc/src/rpcheader.pb.cc > CMakeFiles/mprpc.dir/rpcheader.pb.cc.i
+
+src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/rpcheader.pb.cc.s"
+	cd /home/zh/proj/work_proj_github/work/rpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zh/proj/work_proj_github/work/rpc/src/rpcheader.pb.cc -o CMakeFiles/mprpc.dir/rpcheader.pb.cc.s
+
+src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o.requires:
+
+.PHONY : src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o.requires
+
+src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o.provides: src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o.requires
+	$(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o.provides.build
+.PHONY : src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o.provides
+
+src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o.provides.build: src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o
+
+
 src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: ../src/rpcprovider.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zh/proj/work_proj_github/work/rpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/mprpc.dir/rpcprovider.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zh/proj/work_proj_github/work/rpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/mprpc.dir/rpcprovider.cc.o"
 	cd /home/zh/proj/work_proj_github/work/rpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mprpc.dir/rpcprovider.cc.o -c /home/zh/proj/work_proj_github/work/rpc/src/rpcprovider.cc
 
 src/CMakeFiles/mprpc.dir/rpcprovider.cc.i: cmake_force
@@ -132,18 +180,22 @@ src/CMakeFiles/mprpc.dir/rpcprovider.cc.o.provides.build: src/CMakeFiles/mprpc.d
 # Object files for target mprpc
 mprpc_OBJECTS = \
 "CMakeFiles/mprpc.dir/mprpcapplication.cc.o" \
+"CMakeFiles/mprpc.dir/mprpcchannel.cc.o" \
 "CMakeFiles/mprpc.dir/mprpcconfig.cc.o" \
+"CMakeFiles/mprpc.dir/rpcheader.pb.cc.o" \
 "CMakeFiles/mprpc.dir/rpcprovider.cc.o"
 
 # External object files for target mprpc
 mprpc_EXTERNAL_OBJECTS =
 
 ../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o
+../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o
 ../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o
+../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o
 ../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/rpcprovider.cc.o
 ../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/build.make
 ../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zh/proj/work_proj_github/work/rpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../lib/libmprpc.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zh/proj/work_proj_github/work/rpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library ../../lib/libmprpc.a"
 	cd /home/zh/proj/work_proj_github/work/rpc/build/src && $(CMAKE_COMMAND) -P CMakeFiles/mprpc.dir/cmake_clean_target.cmake
 	cd /home/zh/proj/work_proj_github/work/rpc/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mprpc.dir/link.txt --verbose=$(VERBOSE)
 
@@ -153,7 +205,9 @@ src/CMakeFiles/mprpc.dir/build: ../lib/libmprpc.a
 .PHONY : src/CMakeFiles/mprpc.dir/build
 
 src/CMakeFiles/mprpc.dir/requires: src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o.requires
+src/CMakeFiles/mprpc.dir/requires: src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o.requires
 src/CMakeFiles/mprpc.dir/requires: src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o.requires
+src/CMakeFiles/mprpc.dir/requires: src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o.requires
 src/CMakeFiles/mprpc.dir/requires: src/CMakeFiles/mprpc.dir/rpcprovider.cc.o.requires
 
 .PHONY : src/CMakeFiles/mprpc.dir/requires
